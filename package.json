@@ -1,0 +1,12 @@
+{
+  "name": "learn-webpack",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/phatnguyenuit/learn-webpack.git",
+  "author": "phatnguyenuit <phatnt.uit@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ]
+}
