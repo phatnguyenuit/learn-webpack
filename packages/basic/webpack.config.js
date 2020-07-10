@@ -47,20 +47,10 @@ const multiple_entry_output_config = {
   },
 };
 
-const multiple_entry_output_prod_config = {
-  ...multiple_entry_output_config,
-  mode: 'production',
-  output: {
-    path: path.resolve(__dirname, 'dist', 'multiple_entry_output_prod_config'),
-    filename: '[name].[id].bundle.js',
-  },
-};
-
 module.exports = [
   basic_config,
   entry_config,
   arr_entry_config,
   multiple_entry_config,
   multiple_entry_output_config,
-  multiple_entry_output_prod_config,
 ];

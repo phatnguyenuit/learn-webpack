@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "module": "ESNext",
+    "lib": ["ESNext"],
+    "noImplicitAny": true,
+    "allowJs": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "outDir": "./dist/",
+  }
+}

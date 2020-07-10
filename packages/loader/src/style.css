@@ -1,0 +1,16 @@
+body {
+  background-color: lightgrey;
+}
+
+p.hello {
+  text-align: center;
+  padding: 8px 16px;
+}
+
+p.hello-js {
+  color: rgb(12, 26, 233);
+}
+
+p.hello-ts {
+  color: red;
+}
