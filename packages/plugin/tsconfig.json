@@ -1,15 +1,14 @@
 {
   "compilerOptions": {
     "target": "es5",
+    "module": "CommonJS",
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "strict": true,
-    "module": "ESNext",
-    "lib": ["ESNext"],
+    "lib": ["ESNext", "DOM"],
     "noImplicitAny": true,
     "allowJs": true,
     "isolatedModules": true,
-    "noEmit": true,
-    "outDir": "./dist/",
+    "outDir": "./dist/"
   }
 }

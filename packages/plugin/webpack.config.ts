@@ -1,6 +1,9 @@
-import * as path from 'path';
+import path from 'path';
 import webpack, { Configuration } from 'webpack';
-import * as HtmlWebpackPlugin from 'html-webpack-plugin';
+import HtmlWebpackPlugin from 'html-webpack-plugin';
+import CopyWebpackPlugin from 'copy-webpack-plugin';
+
+// Reference: https://webpack.js.org/configuration/configuration-languages/#typescript
 
 const config: Configuration = {
   target: 'web', // default
@@ -25,6 +28,14 @@ const config: Configuration = {
   },
   plugins: [
     new webpack.ProgressPlugin(),
+    new CopyWebpackPlugin({
+      patterns: [
+        {
+          from: path.resolve(__dirname, 'public/styles'),
+          to: path.resolve(__dirname, 'dist/styles'),
+        },
+      ],
+    }),
     new HtmlWebpackPlugin({
       template: path.resolve('./public', 'index.html'),
     }),
@@ -37,6 +48,8 @@ const config: Configuration = {
     compress: true,
     hot: true,
     port: 5000,
+    liveReload: true,
+    open: true,
   },
 };
 
