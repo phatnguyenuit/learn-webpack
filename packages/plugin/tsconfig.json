@@ -9,6 +9,8 @@
     "noImplicitAny": true,
     "allowJs": true,
     "isolatedModules": true,
-    "outDir": "./dist/"
-  }
+    "outDir": "./dist/",
+    "declaration": true
+  },
+  "include": ["./src"]
 }
