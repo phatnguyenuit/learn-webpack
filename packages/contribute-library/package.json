@@ -1,0 +1,24 @@
+{
+  "name": "contribute-library",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "files": [
+    "dist/"
+  ],
+  "typings": "dist/index.d.ts",
+  "license": "MIT",
+  "scripts": {
+    "dev": "webpack -w -d",
+    "build": " webpack -p"
+  },
+  "devDependencies": {
+    "@types/node": "^14.0.22",
+    "@types/webpack": "^4.41.21",
+    "prettier": "^2.0.5",
+    "ts-loader": "^8.0.0",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.6",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "CommonJS",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "lib": ["ESNext", "DOM"],
+    "noImplicitAny": true,
+    "allowJs": true,
+    "isolatedModules": true,
+    "outDir": "./dist/",
+    "declaration": true
+  },
+  "include": ["./src"]
+}
