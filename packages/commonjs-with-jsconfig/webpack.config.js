@@ -1,4 +1,5 @@
 const path = require('path');
+const jsConfig = require('./jsconfig.json');
 
 module.exports = {
   target: 'node',
@@ -22,6 +23,9 @@ module.exports = {
     ],
   },
   resolve: {
-    modules: ['node_modules', 'src'],
+    modules: [
+      path.resolve('./node_modules'),
+      path.resolve(jsConfig.compilerOptions.baseUrl),
+    ],
   },
 };
